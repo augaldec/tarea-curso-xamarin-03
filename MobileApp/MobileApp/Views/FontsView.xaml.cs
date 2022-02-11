@@ -46,9 +46,10 @@ namespace MobileApp.Views
 			await Task.Delay(3000);
 
 			var fonts = new List<FontItem> {
-				new FontItem { FontFamilyName = new Label().FontFamily },
-				new FontItem { FontFamilyName = "Lobster" },
-				new FontItem { FontFamilyName = "ArchitectsDaughter" },
+				new FontItem { FontFamilyName = new Label().FontFamily, Icon=Convert.ToString(Application.Current.Resources["Car"])},
+				new FontItem { FontFamilyName = "Lobster", Icon=Convert.ToString(Application.Current.Resources["Cat"])},
+				new FontItem { FontFamilyName = "ArchitectsDaughter", Icon=Convert.ToString(Application.Current.Resources["Cart"])},
+				
 			};
 
 			return fonts;

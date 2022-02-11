@@ -8,6 +8,9 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles/Default.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <x:String x:Key="Car">&#xf1b9;</x:String>
+            <x:String x:Key="Cat">&#xf6be;</x:String>
+            <x:String x:Key="Cart">&#xf07a;</x:String>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

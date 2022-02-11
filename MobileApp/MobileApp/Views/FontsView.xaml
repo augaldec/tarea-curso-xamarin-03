@@ -17,13 +17,22 @@
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
                                 <Frame BorderColor="LightGray" Margin="1,1,0,0.5" HasShadow="False">
-                                    <Label Text="{Binding FontFamilyName}" FontFamily="{Binding FontFamilyName}" />
-                                </Frame>
-                            </DataTemplate>
+                                <Label>
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{Binding FontFamilyName}" FontFamily="{Binding FontFamilyName}" />
+                                            <Span Text="{Binding Icon}" FontFamily="FontAwesome6" FontSize="32"  />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                 </Label>
+                               
+                            </Frame>                           
+                            </DataTemplate>                       
                         </CollectionView.ItemTemplate>
+                   
                 </CollectionView>
-        
-            </RefreshView>
+               
+            </RefreshView>            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
